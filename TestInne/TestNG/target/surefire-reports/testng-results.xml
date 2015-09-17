@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="65959" started-at="2015-09-17T16:22:23Z" finished-at="2015-09-17T16:23:29Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="65959" started-at="2015-09-17T16:22:23Z" finished-at="2015-09-17T16:23:29Z">
+      <class name="com.dantelion.testng.examples.exception.TestRuntime">
+        <test-method status="PASS" signature="divisionWithException()[pri:0, instance:com.dantelion.testng.examples.exception.TestRuntime@7c883540]" name="divisionWithException" duration-ms="0" started-at="2015-09-17T11:23:29Z" finished-at="2015-09-17T11:23:29Z">
+          <exception class="java.lang.ArithmeticException">
+            <message>
+              <![CDATA[/ by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArithmeticException: / by zero
+	at com.dantelion.testng.examples.exception.TestRuntime.divisionWithException(TestRuntime.java:9)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArithmeticException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divisionWithException -->
+      </class> <!-- com.dantelion.testng.examples.exception.TestRuntime -->
+      <class name="com.dantelion.testng.examples.exception.TestCheckedException">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.dantelion.testng.examples.exception.TestCheckedException@3d6be152]" name="setup" is-config="true" duration-ms="10" started-at="2015-09-17T11:22:23Z" finished-at="2015-09-17T11:22:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="throwIfOrderIsNull()[pri:0, instance:com.dantelion.testng.examples.exception.TestCheckedException@3d6be152]" name="throwIfOrderIsNull" duration-ms="0" started-at="2015-09-17T11:22:23Z" finished-at="2015-09-17T11:22:23Z">
+          <exception class="com.dantelion.testng.project.order.OrderSaveException">
+            <message>
+              <![CDATA[Order is empty!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.dantelion.testng.project.order.OrderSaveException: Order is empty!
+	at com.dantelion.testng.project.order.OrderBo.save(OrderBo.java:8)
+	at com.dantelion.testng.examples.exception.TestCheckedException.throwIfOrderIsNull(TestCheckedException.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.dantelion.testng.project.order.OrderSaveException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- throwIfOrderIsNull -->
+        <test-method status="PASS" signature="throwIfOrderIsNotExists()[pri:0, instance:com.dantelion.testng.examples.exception.TestCheckedException@3d6be152]" name="throwIfOrderIsNotExists" duration-ms="0" started-at="2015-09-17T11:22:23Z" finished-at="2015-09-17T11:22:23Z">
+          <exception class="com.dantelion.testng.project.order.OrderNotFoundException">
+            <message>
+              <![CDATA[Order is not exists]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.dantelion.testng.project.order.OrderNotFoundException: Order is not exists
+	at com.dantelion.testng.project.order.OrderBo.update(OrderBo.java:22)
+	at com.dantelion.testng.examples.exception.TestCheckedException.throwIfOrderIsNotExists(TestCheckedException.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.dantelion.testng.project.order.OrderNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- throwIfOrderIsNotExists -->
+      </class> <!-- com.dantelion.testng.examples.exception.TestCheckedException -->
+      <class name="com.dantelion.testng.examples.ignore.TestIgnore">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.dantelion.testng.examples.ignore.TestIgnore@7c20ba62]" name="test1" duration-ms="0" started-at="2015-09-17T11:22:23Z" finished-at="2015-09-17T11:22:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.dantelion.testng.examples.ignore.TestIgnore@7c20ba62]" name="test2" duration-ms="0" started-at="2015-09-17T11:22:23Z" finished-at="2015-09-17T11:22:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- com.dantelion.testng.examples.ignore.TestIgnore -->
+      <class name="com.dantelion.testng.examples.loadtest.TestMultipleThreads">
+        <test-method status="PASS" signature="loadTest()[pri:0, instance:com.dantelion.testng.examples.loadtest.TestMultipleThreads@5a36c9d5]" name="loadTest" duration-ms="42843" started-at="2015-09-17T11:22:23Z" finished-at="2015-09-17T11:23:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadTest -->
+        <test-method status="PASS" signature="loadTest()[pri:0, instance:com.dantelion.testng.examples.loadtest.TestMultipleThreads@5a36c9d5]" name="loadTest" duration-ms="65919" started-at="2015-09-17T11:22:23Z" finished-at="2015-09-17T11:23:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadTest -->
+        <test-method status="PASS" signature="loadTest()[pri:0, instance:com.dantelion.testng.examples.loadtest.TestMultipleThreads@5a36c9d5]" name="loadTest" duration-ms="48275" started-at="2015-09-17T11:22:23Z" finished-at="2015-09-17T11:23:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadTest -->
+        <test-method status="PASS" signature="loadTest()[pri:0, instance:com.dantelion.testng.examples.loadtest.TestMultipleThreads@5a36c9d5]" name="loadTest" duration-ms="49935" started-at="2015-09-17T11:22:23Z" finished-at="2015-09-17T11:23:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadTest -->
+        <test-method status="PASS" signature="loadTest()[pri:0, instance:com.dantelion.testng.examples.loadtest.TestMultipleThreads@5a36c9d5]" name="loadTest" duration-ms="23500" started-at="2015-09-17T11:22:23Z" finished-at="2015-09-17T11:22:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadTest -->
+      </class> <!-- com.dantelion.testng.examples.loadtest.TestMultipleThreads -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

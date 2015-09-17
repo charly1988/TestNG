@@ -1,0 +1,5 @@
+com\dantelion\testng\examples\ignore\TestIgnore.class
+com\dantelion\testng\examples\loadtest\TestMultipleThreads.class
+com\dantelion\testng\examples\timeout\TestTimeout.class
+com\dantelion\testng\examples\exception\TestCheckedException.class
+com\dantelion\testng\examples\exception\TestRuntime.class
